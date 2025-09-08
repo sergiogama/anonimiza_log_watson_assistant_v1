@@ -94,20 +94,20 @@ def test_address_with_bairro_complement_and_cep(s):
 # ----------------- CPF -----------------
 
 def test_cpf_valido():
-    assert cpf_is_valid("08286669894") is True
+    assert cpf_is_valid("54323576820") is True
 
 @pytest.mark.parametrize("s", [
-    "meu CPF é 082.866.698-94",
-    "CPF: 08286669894",
+    "meu CPF é 543.235.768-20",
+    "CPF: 54323576820",
 ])
 def test_mask_cpf_format_positional(s):
     masked = _masked(s)
     assert _has("CPF", masked)
-    assert "082.866.698-94" not in masked
-    assert "08286669894" not in masked
+    assert "543.235.768-20" not in masked
+    assert "54323576820" not in masked
 
 def test_mask_cpf_contextual_invalido():
-    s = "meu CPF é 082.866.6998-94"  # inválido, mas contextual; sua lógica mascara
+    s = "meu CPF é 543.235.768-20"  # inválido, mas contextual; sua lógica mascara
     masked = _masked(s)
     assert _has("CPF", masked)
 
