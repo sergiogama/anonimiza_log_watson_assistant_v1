@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Environment & Security
+.env
+.env.*
+
+# Test/Cache
+.pytest_cache/
+
+# Logs & Outputs
+watson_v1_logs_anon.json*
+watson_v1_logs_original.json*
+watson_v1_logs_privados.jsonl
+Archive.zip
+
+# Outros arquivos temporários
+*.log

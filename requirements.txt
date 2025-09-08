@@ -1,0 +1,17 @@
+# Python 3.12
+
+# Núcleo científico
+numpy<2
+
+# HF NER (transformers) + backend (PyTorch CPU)
+torch==2.2.2
+transformers>=4.41,<5
+tokenizers>=0.15,<0.21
+
+# Utilidades usadas no script
+requests>=2.31,<3
+python-dotenv>=1.0,<2
+phonenumbers>=8.13,<9
+
+# testes
+pytest>=8.2
