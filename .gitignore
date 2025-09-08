@@ -11,7 +11,6 @@ __pycache__/
 
 # Environment & Security
 .env
-.env.*
 
 # Test/Cache
 .pytest_cache/
