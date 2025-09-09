@@ -36,7 +36,7 @@ WATSONX_MODEL_ID=ibm/granite-20b-multilingual
 ## Uso
 
 ```sh
-$ python ler_logs_wa.py
+$ python anon_logs_wa.py
 ```
 
 Os arquivos de saída serão gerados no diretório corrente:
@@ -46,7 +46,7 @@ Os arquivos de saída serão gerados no diretório corrente:
 
 ## Testes
 
-Se houver testes automatizados:
+Testes automatizados:
 ```sh
 $ pytest -q
 ```
